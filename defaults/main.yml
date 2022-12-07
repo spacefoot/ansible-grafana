@@ -190,11 +190,23 @@ grafana_image_storage: {}
 #  bucket:
 #  path:
 
+grafana_plugins_config: {}
+# enable_alpha:
+# allow_loading_unsigned_plugins:
+# plugin_admin_enabled:
+# plugin_admin_external_manage_enabled:
+# plugin_catalog_url:
+# plugin_catalog_hidden_plugins:
+
 
 #######
 # Plugins from https://grafana.com/plugins
 grafana_plugins: []
 #  - raintank-worldping-app
+
+# Plugins from external sources
+grafana_external_plugins: []
+# - { name: foo, url: https://exemple.com/foo.zip }
 
 # Dashboards from https://grafana.com/dashboards
 grafana_dashboards: []

@@ -195,3 +195,11 @@ provider = {{ grafana_image_storage.provider }}
 {{ k }} = {{ v }}
 {%   endfor %}
 {% endif %}
+
+# Plugins
+{% if grafana_plugins_config != {} %}
+[plugins]
+{%   for k,v in grafana_plugins_config.items() %}
+{{ k }} = {{ v }}
+{%   endfor %}
+{% endif %}
